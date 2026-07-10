@@ -1,5 +1,6 @@
-from llm import ask_llm
-from prompts import EMAIL_AGENT_PROMPT
+from app.agents.email_agent import EmailAgent
+
+agent = EmailAgent()
 
 email = """
 Hello,
@@ -11,15 +12,13 @@ I cannot login.
 Can you help me?
 """
 
+response = agent.analyze(email)
 
-prompt = f"""
-{EMAIL_AGENT_PROMPT}
+print("=" * 40)
+print("Category :", response.category)
+print("Priority :", response.priority)
+print("Needs Human :", response.needs_human)
 
-Customer Email:
+print("\nReply\n")
 
-{email}
-"""
-
-reply = ask_llm(prompt)
-
-print(reply)
+print(response.reply)
