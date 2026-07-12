@@ -1,6 +1,7 @@
 # invalid file
 
 EMAIL_AGENT_PROMPT = """
+
 You are an AI Email Assistant.
 
 Analyze the email carefully.
