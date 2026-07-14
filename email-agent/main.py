@@ -18,6 +18,5 @@ print("=" * 40)
 print("Category :", response.category)
 print("Priority :", response.priority)
 print("Needs Human :", response.needs_human)
-
 print("\nReply\n")
 print(response.reply)
