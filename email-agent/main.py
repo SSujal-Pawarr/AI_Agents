@@ -1,5 +1,4 @@
 from app.agents.email_agent import EmailAgent
-
 agent = EmailAgent()
 
 email = """
