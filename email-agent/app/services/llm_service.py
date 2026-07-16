@@ -6,7 +6,6 @@ from app.config import (
     BASE_URL,
 )
 
-
 class LLMService:
 
     def __init__(self):
